@@ -25,7 +25,7 @@ export const Pokemon = async ({
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-(--primary-color)">
-      <main className="flex flex-col min-h-screen items-center w-4/5 bg-white">
+      <main className="flex flex-col min-h-screen items-center w-full sm:w-4/5 bg-white">
         <h1 className="text-4xl font-bold mt-6">Pokemon Details</h1>
         <figure className="flex justify-center items-center flex-col">
           <Image
@@ -40,7 +40,7 @@ export const Pokemon = async ({
         </figure>
         <div className="w-4/5 min-w-[300px] bg-white p-5 mb-[45px]">
           <h2 className="mt-6 font-bold text-2xl">Details</h2>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="mt-6 flex flex-col mr-4">
               <h3 className="font-bold">Attributes</h3>
               {abilities.map(({ ability }) => {
