@@ -114,7 +114,7 @@ export const PokemonTable = () => {
 
   return (
     <div className="p-2 flex flex-col items-center">
-      <div className="flex flex-col items-center w-4/5 xl:w-[1000px]">
+      <div className="flex flex-col items-center w-full sm:w-4/5 xl:w-[1000px]">
         <table className="border border-(--border-color) w-full">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (

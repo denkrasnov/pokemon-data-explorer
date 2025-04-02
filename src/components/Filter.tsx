@@ -18,7 +18,7 @@ export const Filter: FC<FilterProps> = ({ column, options }) => {
   if (filterVariant === "select") {
     return (
       <select
-        className="border shadow rounded"
+        className="border shadow rounded w-full max-w-36"
         onChange={(e) => column.setFilterValue(e.target.value)}
         value={columnFilterValue?.toString()}
       >
