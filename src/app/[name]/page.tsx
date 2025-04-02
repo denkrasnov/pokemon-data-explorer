@@ -48,7 +48,7 @@ export const Pokemon = async ({
               })}
             </div>
             <div className="mt-6 flex flex-col mr-4">
-              <h3 className="font-bold">Attributes</h3>
+              <h3 className="font-bold">Stats</h3>
               {stats.map(({ stat }) => {
                 return <div key={stat.name}>{stat.name}</div>;
               })}
